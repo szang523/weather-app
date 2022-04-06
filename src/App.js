@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="container">
       <h1> Weather App </h1>
+      <input className="input" placeholder="Search city" />
     </div>
   );
 }
