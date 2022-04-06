@@ -1,5 +1,4 @@
 import "./App.css";
-import React, { useState } from "react";
 import Search from "./components/Search/Search";
 
 function App() {
