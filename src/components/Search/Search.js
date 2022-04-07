@@ -6,20 +6,28 @@ const Search = (props) => {
   const [city, setCity] = useState("");
 
   const getWeather = (event) => {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
       fetch(
-        "https://api.openweathermap.org/data/2.5/weather?q={city name},{state code}&units=imperial&appid={API key}"
+        "https://api.openweathermap.org/data/2.5/weather?q={city}&units=imperial&appid={apiKey}"
       )
         .then((response) => response.json())
         .then((data) => {
           setWeatherData(data);
+          setCity("");
         });
     }
   };
 
   return (
     <div>
-      <input type="text" className="input" placeholder="Search city" />
+      <input
+        type="text"
+        className="input"
+        placeholder="Search city"
+        onChange={(e) => setCity(e.target.value)}
+        value={city}
+        onKeyPress={getWeather}
+      />
     </div>
   );
 };
