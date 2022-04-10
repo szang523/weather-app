@@ -38,6 +38,12 @@ const Search = (props) => {
           <p>{weatherData.name}</p>
           <p>{Math.round(weatherData.main.temp)}°F</p>
           <p>{weatherData.weather[0].main}</p>
+          {/* <p>{weatherIcon}</p> */}
+          <img
+            src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
+            alt="weather status icon"
+            className="weather-icon"
+          />
         </div>
       )}
     </div>
