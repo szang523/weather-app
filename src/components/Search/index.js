@@ -19,7 +19,7 @@ const Search = (props) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <input
         type="text"
         className="input"
@@ -28,24 +28,28 @@ const Search = (props) => {
         value={city}
         onKeyPress={getWeather}
       />
-
-      {typeof weatherData.main === "undefined" ? (
-        <div>
-          <p>Enter a city to begin</p>
-        </div>
-      ) : (
-        <div>
-          <p>{weatherData.name}</p>
-          <p>{Math.round(weatherData.main.temp)}°F</p>
-          <p>{weatherData.weather[0].main}</p>
-          {/* <p>{weatherIcon}</p> */}
-          <img
-            src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
-            alt="weather status icon"
-            className="weather-icon"
-          />
-        </div>
-      )}
+      <div className="weather-container">
+        {typeof weatherData.main === "undefined" ? (
+          <div>
+            <p>Enter a city to begin</p>
+          </div>
+        ) : (
+          <div>
+            <div className="weather-data">
+              <p>{weatherData.name}</p>
+              <p>{Math.round(weatherData.main.temp)}°F</p>
+              <p>{weatherData.weather[0].main}</p>
+            </div>
+            <div>
+              <img
+                src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
+                alt="weather status icon"
+                className="weather-icon"
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

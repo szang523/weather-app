@@ -1,16 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #45bbff;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 .container {
   display: flex;
@@ -19,6 +18,14 @@ code {
   margin: auto;
   align-items: center;
   justify-content: center;
+}
+
+.container h1 {
+  background: #c7eaff;
+  padding: 25px 50px;
+  border-radius: 6px;
+  /* width: 50%; */
+  text-align: center;
 }
 
 .input {
@@ -31,4 +38,27 @@ code {
 
 .input:hover {
   outline: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.weather-container {
+  margin: 25px auto;
+  background: #c7eaff;
+  text-align: center;
+  border-radius: 6px;
+  width: 80%;
+  padding: 5px 15px;
+  width: 400px;
+}
+
+.weather-data {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.weather-icon {
+  width: 75px;
 }

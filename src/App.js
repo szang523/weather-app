@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 import "./App.css";
-import Search from "./components/Search/Search";
+import Search from "./components/Search";
 // import Weather from "./components/Weather/Weather";
 
 function App() {
