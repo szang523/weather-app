@@ -62,3 +62,8 @@ body {
 .weather-icon {
   width: 75px;
 }
+
+.sun {
+  width: 75%;
+  margin-top: -15px;
+}

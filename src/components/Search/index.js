@@ -30,8 +30,11 @@ const Search = (props) => {
       />
       <div className="weather-container">
         {typeof weatherData.main === "undefined" ? (
-          <div>
+          <div className="container">
             <p>Enter a city to begin</p>
+            <img src={"sun.png"} alt="sun" className="sun" />
+
+            <a href="https://pngtree.com/so/sun">sun png from pngtree.com/</a>
           </div>
         ) : (
           <div>
