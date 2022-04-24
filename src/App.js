@@ -5,7 +5,6 @@ import Weather from "./components/Weather";
 
 function App() {
   const apiKey = "96b7e702087a5e96f30cc8a2e1e36891";
-  //line 4 + 6 in app
   const [weatherData, setWeatherData] = useState([{}]);
   const [city, setCity] = useState("");
 
