@@ -6,64 +6,7 @@ body {
   background-color: #45bbff;
 }
 
-/* code {
+code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-} */
-
-.container {
-  display: flex;
-  padding: 25px;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.container h1 {
-  background: #c7eaff;
-  padding: 25px 50px;
-  border-radius: 6px;
-  /* width: 50%; */
-  text-align: center;
-}
-
-.input {
-  padding: 15px;
-  margin: auto;
-  border: 1px solid lightgray;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.input:hover {
-  outline: none;
-}
-
-.input:focus {
-  outline: none;
-}
-
-.weather-container {
-  margin: 25px auto;
-  background: #c7eaff;
-  text-align: center;
-  border-radius: 6px;
-  width: 80%;
-  padding: 5px 15px;
-  width: 400px;
-}
-
-.weather-data {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.weather-icon {
-  width: 75px;
-}
-
-.sun {
-  width: 75%;
-  margin-top: -15px;
 }

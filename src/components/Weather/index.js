@@ -1,4 +1,5 @@
 import sunImage from "../../assets/sun.png";
+import "./weather.css";
 
 const Weather = ({ main, name, temp, weather, icon }) => {
   return (

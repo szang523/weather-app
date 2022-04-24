@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  background: #c7eaff;
+  padding: 25px 50px;
+  border-radius: 6px;
+  /* width: 50%; */
+  text-align: center;
+}

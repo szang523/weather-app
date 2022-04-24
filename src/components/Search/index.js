@@ -1,3 +1,5 @@
+import "./search.css";
+
 const Search = ({ onChangeFunction, value, onKeyPress }) => {
   return (
     <div className="container">
