@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import sunImage from "../../assets/sun.png";
 
 const Search = (props) => {
   const apiKey = "96b7e702087a5e96f30cc8a2e1e36891";
@@ -32,7 +33,7 @@ const Search = (props) => {
         {typeof weatherData.main === "undefined" ? (
           <div className="container">
             <p>Enter a city to begin</p>
-            <img src={"sun.png"} alt="sun" className="sun" />
+            <img src={sunImage} alt="sun" className="sun" />
 
             <a href="https://pngtree.com/so/sun">sun png from pngtree.com/</a>
           </div>
